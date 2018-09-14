@@ -1,0 +1,143 @@
+
+        /* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+
+
+}
+#demo{
+    font-size: 2rem;
+    text-transform: capitalize;
+
+}
+
+.logo{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    width: 203px;
+    margin: 0 auto;
+    height: 198px;
+
+}
+.icons ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+}
+.icons ul a:link,.icons ul a{
+    color:white;
+}
+.icons li{
+    color:white;
+    background-color : rgba(0, 0, 0, 0.4);
+    padding-left: 10px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.bgimg {
+    /* Background image */
+    background-image: url(../images/living-room.jpeg);
+    /* Full-screen */
+    height: 100%;
+    /* Center the background image */
+    background-position: center;
+    /* Scale and zoom in the image */
+    background-size: cover;
+    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+    position: relative;
+    /* Add a white text color to all elements inside the .bgimg container */
+    color: white;
+    /* Add a font */
+    
+    /* Set the font-size to 25 pixels */
+    font-size: 25px;
+}
+
+/* Position text in the top-left corner */
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+/* Position text in the middle */
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.middle h2{
+    margin:20px 0;
+}
+.middle h2 span{
+    color: #9abab7;
+    border:5px solid #9abab7; 
+    padding: 5px 10px;
+
+}
+
+/* Style the <hr> element */
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+
+
+@media screen and (max-width: 900px){
+
+    .middle{
+        width: 80%;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    #demo,h1{
+        font-size: 1.5rem;
+        
+        
+    }
+    h1{
+        margin: 20px 10px;
+    }
+    #demo li {
+        font-size: 1rem;
+    }
+    .middle{
+        width: 100%;
+    }
+    .middle h2{
+        font-size: 1.2rem;
+        margin: 20px auto;
+    
+    }
+}
+@media screen and (max-width: 320px) {
+    
+    .icons li {
+        font-size: 0.8rem;
+        padding: 0;
+        padding: 0;
+    }
+    .middle{
+        width: 100%;
+    }
+    .middle h2{
+        font-size: 1rem;
+        margin: 20px auto;
+    
+    }
+}
